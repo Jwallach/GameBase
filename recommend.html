@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles.css">
-    <title>Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/recommend.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Recommend Page</title>
   </head>
 
 
@@ -11,41 +13,55 @@
 	<!-- Navigation -->
 	<div class="top-nav">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="profile.html">Profile</a>
-				</li>
-			</ul>
-			<div class="search-container">
-				<form href="results.html">
-					<input type="text" placeholder="Search..." name="search">
-					<button type="submit">Submit</button>
-				</form>
-			</div>
+			<a class="navbar-brand" href="/Gamefinder">
+				<img class="logo" src="logo.png">
+			</a>
 			<ul class="navbar-nav ml-auto">
+				<div class="search-container center-auto">
+					<form href="results.html">
+						<input type="text" placeholder="Search..." name="search">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
 				<li class="nav-item">
 					<a class="nav-link" href="categories.html">Categories</a>
 				</li>
 				<li class="nav-item active">
 					<a class="nav-link" href="recommend.html">Recommend</a>
 				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="profile.html">Profile</a>
+				</li>
 			</ul>
 		</nav>
 	</div>
-	<br>
-	<br>
-	<h1>Similar to Games You Like</h1>
-	<p href="game.html">Game1</p>
-	<p>Game2</p>
-	<h1>Similar to Your Preferences</h1>
-	<p>Game1</p>
-	<p>Game2</p>
-	<h1>Chosen Categories/Aspects</h1>
-	<p>Game1</p>
-	<p>Game2</p>
+	<!-- End of Navigation -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				<h1>Similar to Games You Like</h1><br>
+				<p><a href="games/overwatch.html">Overwatch</a></p>
+				<p><a href="games/skyrim.html">The Elder Scrolls V: Skyrim</a></p>
+				<p>Hearthstone</p>
+				<p>Fallout 3</p>
+				<p>Pokemon</p>
+				<br>
+				<h1>Similar to Your Preferences</h1><br>
+				<p><a href="games/overwatch.html">Overwatch</a></p>
+				<p><a href="games/skyrim.html">The Elder Scrolls V: Skyrim</a></p>
+				<p>Hearthstone</p>
+				<p>Fallout 3</p>
+				<p>Pokemon</p>
+				<br>
+				<h1>Chosen Categories/Aspects</h1><br>
+				<p><a href="games/overwatch.html">Overwatch</a></p>
+				<p><a href="games/skyrim.html">The Elder Scrolls V: Skyrim</a></p>
+				<p>Hearthstone</p>
+				<p>Fallout 3</p>
+				<p>Pokemon</p>
+			</div>
+		</div>
+	</div>
 </body>
 
   <!-- JS -->
