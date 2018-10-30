@@ -3,51 +3,108 @@
   <head>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
-    <title>Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="css/categories.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Category Selection</title>
   </head>
-
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-}
-search-container {
-    max-width: 1000px;
-	width: 100%;
-}
-</style>
 
 <body>
 	<!-- Navigation -->
 	<div class="top-nav">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="profile.html">Profile</a>
-				</li>
-			</ul>
-			<div class="search-container">
-				<form href="results.html">
-					<input type="text" placeholder="Search..." name="search">
-					<button type="submit">Submit</button>
-				</form>
-			</div>
+			<a class="navbar-brand" href="/Gamefinder">
+				<img class="logo" src="logo.png">
+			</a>
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
+				<div class="search-container center-auto">
+					<form href="results.html">
+						<input type="text" placeholder="Search..." name="search">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+				<li class="nav-item">
 					<a class="nav-link" href="categories.html">Categories</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="recommend.html">Recommend</a>
 				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="profile.html">Profile</a>
+				</li>
 			</ul>
 		</nav>
 	</div>
+	<!-- End of Navigation -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				<h1>Categories</h1><br>
+				<div class="dropdown">
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> Multiplayer
+					<br>
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> Singleplayer
+					<br>
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> FPS
+					<br>
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> MMO
+					<br>
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> RPG
+				</div>
+				<br>
+				<h1>Aspects</h1><br>
+				<div class="dropdown">
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> Moddable
+					<br>
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> Open World
+					<br>
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> Visually Appealing
+					<br>
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> Story-driven
+				</div>
+				<br>
+				<div class="button">
+					<button class="button" type="submit">Submit</button>
+				</div>
+			</div>
+		</div>
 </body>
-
+	
   <!-- JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
