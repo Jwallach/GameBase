@@ -1,5 +1,6 @@
 .body, .html {
 	height: 100%;
+	width: 100%;
 	margin: 0;
 	font: 400 15px/1.8 "Lato", sans-serif;
 }
@@ -7,26 +8,14 @@
     max-width: 1000px;
 	width: 100%;
 }
-.col-text {
-    margin-left: 5%;
-	width: 100%;
-	padding: 10px;
-}
-.col-images {
-	float: right;
-	margin-right: 5%;
-	width: 100%;
-	padding: 10px;
-}
-.gallery {
+.column {
     margin: 5px;
-    border: 1px solid #ccc;
+	border: 1px solid #ccc;
     float: left;
 }
 .images {
-	max-width: 250px;
-	max-height: 250px;
+	max-height: 300px;
+	max-width: 100%;
 	width: auto;
 	height: auto;
 }
-
