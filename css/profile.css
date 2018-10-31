@@ -7,3 +7,7 @@ search-container {
     max-width: 1000px;
 	width: 100%;
 }
+.logo {
+	max-height: 50px;
+	max-width: 50px;
+}
