@@ -11,6 +11,18 @@
 	max-height: 50px;
 	max-width: 50px;
 }
+.container-fluid {
+	height: 100%;
+	position: absolute;
+}
+.col {
+	height: 100%;
+	display: table-row;
+	background-color: rgba(128, 128, 128, 0.5);
+}
+.col-md-5 {
+	background-color: rgba(132, 160, 219, 0.5);
+}
 .row {
-	padding: 5px;
+	height: 100%;
 }
