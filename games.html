@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/categories.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Browse Games</title>
+</head>
+
+
+<body>
+    <!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="/Gamefinder">
+				<img class="logo" src="res/logo.png">
+		</a>
+		<ul class="navbar-nav ml-auto">
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+				<!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
+				<button class="btn btn-outline-light my-2 my-sm-0" type="submit"><a href="results.html">Search</a></button>
+			</form>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="games.html">Games</a>
+					<a class="dropdown-item" href="aspects.html">Aspects</a>
+					<a class="dropdown-item" href="categories.html">Categories</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="preferences.html">Preferences</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="recommend.html">Recommend</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="profile.html">Profile</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- End of Navigation -->
+    <div id=category_intro>
+    <h3>Games</h3>
+    <p id=aspect_desc>List of Games</p>
+    </div>
+    <div id="category_list">
+        <div class="games">
+            <h5 class="game_name"><a href="games/skyrim.html">The Elder Scrolls V: Skyrim</a></h5>
+			<h5 class="game_name"><a href="games/overwatch.html">Overwatch</a></h5>
+        </div>
+    </div>
+</body>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+</html>

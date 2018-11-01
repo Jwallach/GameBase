@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/preferences.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Category Selection</title>
+  </head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="/Gamefinder">
+				<img class="logo" src="res/logo.png">
+		</a>
+		<ul class="navbar-nav ml-auto">
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+				<!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
+				<button class="btn btn-outline-light my-2 my-sm-0" type="submit"><a href="results.html">Search</a></button>
+			</form>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="games.html">Games</a>
+					<a class="dropdown-item" href="aspects.html">Aspects</a>
+					<a class="dropdown-item" href="categories.html">Categories</a>
+				</div>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="preferences.html">Preferences</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="recommend.html">Recommend</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="profile.html">Profile</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- End of Navigation -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				<h1>Categories</h1><br>
+				<div class="drop dropdown">
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> Multiplayer
+					<br>
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> Singleplayer
+					<br>
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> FPS
+					<br>
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> MMO
+					<br>
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> RPG
+				</div>
+				<br>
+				<h1>Aspects</h1><br>
+				<div class="drop dropdown">
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> Moddable
+					<br>
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> Open World
+					<br>
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> Visually Appealing
+					<br>
+					<select>
+						<option value="Like">Like</option>
+						<option value="Like" selected>No Preference</option>
+						<option value="Like">Dislike</option>
+					</select> Story-driven
+				</div>
+				<br>
+				<div class="button">
+					<button class="button" type="submit"><a href="recommend.html">Submit</a></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+	
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+</html>

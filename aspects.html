@@ -11,30 +11,36 @@
 
 <body>
     <!-- Navigation -->
-    <div class="top-nav">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/~Gamefinder">
-                <img class="logo" src="darklogo.png">
-            </a>
-            <ul class="navbar-nav ml-auto">
-                <div class="search-container center-auto">
-                    <form href="results.html">
-                        <input type="text" placeholder="Search..." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-                <li class="nav-item">
-                    <a class="nav-link" href="categories.html">Categories</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="recommend.html">Recommend</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="profile.html">Profile</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="/Gamefinder">
+				<img class="logo" src="res/logo.png">
+		</a>
+		<ul class="navbar-nav ml-auto">
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+				<!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
+				<button class="btn btn-outline-light my-2 my-sm-0" type="submit"><a href="results.html">Search</a></button>
+			</form>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="games.html">Games</a>
+					<a class="dropdown-item" href="aspects.html">Aspects</a>
+					<a class="dropdown-item" href="categories.html">Categories</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="preferences.html">Preferences</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="recommend.html">Recommend</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="profile.html">Profile</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- End of Navigation -->
     <div id=aspect_intro>
     <h3>Aspects</h3>
     <p id=aspect_desc>Aspects are the traits of a game that go beyond things such as genre or simple tags. They often involve the philosophy of how a game is designed, or how they play out. For example, one RPG may feature a combat system
@@ -44,7 +50,7 @@
     <div id="aspect_list">
         <div class="aspect_category">
             <h5 class="aspect_category_name">Difficulty</h5>
-            <a class="aspect_link" href="aspects/hard_but_fair.html">Hard but Fair Difficulty</a>" 
+            <a class="aspect_link" href="aspects/hard_but_fair.html">Hard but Fair Difficulty</a>
         </div>
     </div>
 </body>

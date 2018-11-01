@@ -1,7 +1,7 @@
 .body, .html {
-	height: 100%;
-	margin: 0;
-	font: 400 15px/1.8 "Lato", sans-serif;
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
 }
 .search-container {
     max-width: 1000px;
@@ -11,13 +11,15 @@
 	max-height: 50px;
 	max-width: 50px;
 }
-h1 {
-	text-align: center;
+#category_intro {
+    margin-top: 5em;
+    text-align: center;
+    margin-left: 5em;
+    margin-right: 5em;
+    
 }
-.dropdown {
-	left: 45%;
-	width: 10%%;
-}
-.button {
-	text-align: center;
+#category_list {
+    margin-top: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
 }
