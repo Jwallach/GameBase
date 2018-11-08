@@ -1,49 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <base href="../"/>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
-    <link rel="stylesheet" type="text/css" href="../css/games.css">
+    <link rel="stylesheet" type="text/css" href="css/games.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Elder Scrolls V: Skyrim</title>
   </head>
 
 <body>
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="/GameBase">
-				<img class="logo" src="../res/logo.png">
-		</a>
-		<ul class="navbar-nav ml-auto">
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
-				<!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
-				<button class="btn btn-outline-light my-2 my-sm-0" type="submit"><a href="results.html">Search</a></button>
-			</form>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="../games.html">Games</a>
-					<a class="dropdown-item" href="../aspects.html">Aspects</a>
-					<a class="dropdown-item" href="../categories.html">Categories</a>
-				</div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="../preferences.html">Preferences</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="../recommend.html">Recommend</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="../profile.html">Profile</a>
-			</li>
-		</ul>
-	</nav>
+	<div id="nav-container">
+	</div>
 	<!-- End of Navigation -->
+
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
-				<h1>The Elder Scrolls V: Skyrim</h1>
+				<h1 id="game_title">Skyrim</h1>
 					<p>The Elder Scrolls V: Skyrim, the 2011 Game of the Year, is the next chapter in the highly anticipated Elder Scrolls saga. Developed by Bethesda Game Studios, the 2011 Studio of the Year, that brought you Oblivion and Fallout 3. Skyrim reimagines and revolutionizes the open-world fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose.</p>
 				<br>
 				<h2>Categories</h2>
@@ -77,29 +52,30 @@
 					<li>The Elder Scrolls IV: Oblivion</li>
 					<li>The Elder Scrolls III: Morrowind</li>
 				</ul>
+                <button class="btn btn-secondary" id="wishlist_game" type="button">Add to Wishlist</button>
 			</div>
 			<div class="col-md-6">
 				<div class="row">
 				<div class="column">
-					<a target="_blank" href="../res/game_img/skyrim_cover.png">
-						<img class="images" src="../res/game_img/skyrim_cover.png" alt="Skyrim Cover">
+					<a target="_blank" href="res/game_img/skyrim_cover.png">
+						<img class="images" src="res/game_img/skyrim_cover.png" alt="Skyrim Cover">
 					</a>
 				</div>
 				<div class="column">
-					<a target="_blank" href="../res/game_img/skyrim_logo.png">
-						<img class="images" src="../res/game_img/skyrim_logo.png" alt="Skyrim Logo">
+					<a target="_blank" href="res/game_img/skyrim_logo.png">
+						<img class="images" src="res/game_img/skyrim_logo.png" alt="Skyrim Logo">
 					</a>
 				</div>
 				</div>
 				<div class="row">
 				<div class="column">
-					<a target="_blank" href="../res/game_img/skyrim_screenshot1.png">
-						<img class="images" src="../res/game_img/skyrim_screenshot1.png" alt="Screenshot">
+					<a target="_blank" href="res/game_img/skyrim_screenshot1.png">
+						<img class="images" src="res/game_img/skyrim_screenshot1.png" alt="Screenshot">
 					</a>
 				</div>
 				<div class="column">
-					<a target="_blank" href="../res/game_img/skyrim_screenshot2.png">
-						<img class="images" src="../res/game_img/skyrim_screenshot2.png" alt="Screenshot">
+					<a target="_blank" href="res/game_img/skyrim_screenshot2.png">
+						<img class="images" src="res/game_img/skyrim_screenshot2.png" alt="Screenshot">
 					</a>
 				</div>
 				</div>
@@ -112,4 +88,10 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('#nav-container').load('navbar.html');
+    });
+  </script>
 </html>

@@ -23,3 +23,8 @@
     margin-left: 5em;
     margin-right: 5em;
 }
+.container-fluid {
+	height: 100%;
+	position: absolute;
+	background-color: rgba(128, 128, 128, 0.5);	
+}

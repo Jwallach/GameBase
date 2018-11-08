@@ -1,53 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <base href="../"/>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/aspect_entry.css">
+    <link rel="stylesheet" type="text/css" href="css/aspect_entry.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Hard but Fair</title>
+    <title>Hard but Fair Difficulty</title>
+    
 </head>
 
 
 <body>
     <!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="/GameBase">
-				<img class="logo" src="../res/logo.png">
-		</a>
-		<ul class="navbar-nav ml-auto">
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
-				<!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
-				<button class="btn btn-outline-light my-2 my-sm-0" type="submit"><a href="results.html">Search</a></button>
-			</form>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="../games.html">Games</a>
-					<a class="dropdown-item" href="../aspects.html">Aspects</a>
-					<a class="dropdown-item" href="../categories.html">Categories</a>
-				</div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="../preferences.html">Preferences</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="../recommend.html">Recommend</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="../profile.html">Profile</a>
-			</li>
-		</ul>
-	</nav>
+	<div id="nav-container">
+	</div>
 	<!-- End of Navigation -->
     
     <div class="aspect_info">
     <h3 class="aspect_title">Hard but Fair Difficulty</h3>
     <p class="aspect_desc">
-        Difficulty which is designed to be challenging but fair. Failures are the vast majority of the time based on reasonable player mistakes and not luck or unfair mechanics. Skilled players are
-        easily and consistently capable of feats such as no-death playthroughs or other feats of skill. Often embodied by single player PVE games.
+        Difficulty which is designed to be challenging but fair. Failures are the vast majority of the time based on reasonable player mistakes and not pure luck or unfair mechanics. Skilled players are
+        easily and consistently capable of feats such as no-death playthroughs or other feats of skill. Despite this, these type of games are often non-deterministic and feature elements of
+        randomness.Usually featured in single player PVE games.
     </p>
+    
+    <h3>Examples of games with this aspect</h3>
+    <ol>
+      <li>Dark Souls</li>
+      <li>Rimworld</li>
+      <li>Darkest Dungeon</a></li>
+    </ol>
+    
     </div>
+    
+    
+    
     
  </body>
 
@@ -55,4 +42,10 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('#nav-container').load('navbar.html');
+    });
+  </script>
 </html>

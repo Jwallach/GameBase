@@ -11,13 +11,16 @@
 	max-height: 50px;
 	max-width: 50px;
 }
-.aspect_info {
-    margin-top: 5em;
-    margin-left: 5em;
-    margin-right: 5em;
-}
 .container-fluid {
 	height: 100%;
 	position: absolute;
 	background-color: rgba(128, 128, 128, 0.5);	
+}
+.info {
+	border-radius: 2px;
+	margin: 10px auto 30px;
+	max-width: 40%;
+}
+.login-form{ 
+	text-align: center;
 }

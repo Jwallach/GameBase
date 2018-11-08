@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/login.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Landing Page</title>
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<div id="nav-container">
+		</div>
+		<!-- End of Navigation -->
+		<div class="container-fluid">
+			<div class="login-form">
+				<div class="info">
+					<h1>Login</h1>
+					<p>Please enter your username and password</p>
+				</div>
+				<form id="Login">
+					<div class="form-group">
+						<input id="username" type="text" placeholder="Username">
+					</div>
+					<div class="form-group">
+						<input type="password" placeholder="Password">
+					</div>
+					<button type="button" class="btn btn-primary" onClick="check()">Login</button>
+				</form>
+			</div>
+		</div>
+	</body>
+	
+	<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#nav-container').load('navbar.html');
+		});
+	</script>
+	<script type="text/javascript" language="javascript" src="js/login.js"></script>
+</html>

@@ -8,93 +8,71 @@
 	<title>Landing Page</title>
   </head>
 
-<body>
-	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="/GameBase">
-				<img class="logo" src="res/logo.png">
-		</a>
-		<ul class="navbar-nav ml-auto">
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
-				<!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
-				<button class="btn btn-outline-light my-2 my-sm-0" type="submit"><a href="results.html">Search</a></button>
-			</form>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="games.html">Games</a>
-					<a class="dropdown-item" href="aspects.html">Aspects</a>
-					<a class="dropdown-item" href="categories.html">Categories</a>
+	<body>
+		<!-- Navigation -->
+		<div id="nav-container">
+		</div>
+		<!-- End of Navigation -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col no-float">
+					<h3>Most Popular Games</h3>
+					<ol>
+						<li><a href="games/overwatch.html">Overwatch</a></li>
+						<li><a href="games/skyrim.html">The Elder Scrolls V: Skyrim</a></li>
+						<li>Hearthstone</li>
+						<li>Fallout</li>
+						<li>Pokemon</li>
+					</ol>
+					<br>
+					<h3>Most Popular Categories</h3>
+					<ol>
+						<li>Multiplayer</li>
+						<li>FPS</li>
+						<li><a href="categories/singleplayer.html">Singleplayer</a></li>
+						<li>MMO</li>
+						<li>RPG</li>
+					</ol>
+					<br>
+					<h3>Most Popular Aspects</h3>
+					<ol>
+						<li>Open World</li>
+						<li>Visually Appealing</li>
+						<li>Story-driven</li>
+						<li>Moddable</li>
+						<li><a href="aspects/hard_but_fair.html">Hard but Fair</a></li>
+					</ol>
 				</div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="preferences.html">Preferences</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="recommend.html">Recommend</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="profile.html">Profile</a>
-			</li>
-		</ul>
-	</nav>
-	<!-- End of Navigation -->
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col no-float">
-				<h3>Most Popular Games</h3>
-				<ol>
-					<li><a href="games/overwatch.html">Overwatch</a></li>
-					<li><a href="games/skyrim.html">The Elder Scrolls V: Skyrim</a></li>
-					<li>Hearthstone</li>
-					<li>Fallout</li>
-					<li>Pokemon</li>
-				</ol>
-				<br>
-				<h3>Most Popular Categories</h3>
-				<ol>
-					<li>Multiplayer</li>
-					<li>FPS</li>
-					<li><a href="categories/singleplayer.html">Singleplayer</a></li>
-					<li>MMO</li>
-					<li>RPG</li>
-				</ol>
-				<br>
-				<h3>Most Popular Aspects</h3>
-				<ol>
-					<li>Open World</li>
-					<li>Visually Appealing</li>
-					<li>Story-driven</li>
-					<li>Moddable</li>
-					<li><a href="aspects/hard_but_fair.html">Hard but Fair</a></li>
-				</ol>
-			</div>
-			<div class="col-md-5">
-				<h1>Welcome to GameBase!</h1>
-				<p>We're a site dedicated to helping you find your next favorite game! Taking a survey of your preferences, along with feedback of past games you've played, we help find the perfect game for you.</p>
-			</div>
-			<div class="col">
-				<h3>News and Updates</h3>
-					<ul>
-						<h5>10/30</h5>
+				<div class="col-md-5">
+					<h1>Welcome to GameBase!</h1>
+					<p>We're a site dedicated to helping you find your next favorite game! Taking a survey of your preferences, along with feedback of past games you've played, we help find the perfect game for you.</p>
+				</div>
+				<div class="col">
+					<h3>News and Updates</h3>
 						<ul>
-							<li>Fixed some weird css issues.</li>
+							<h5>10/30</h5>
+							<ul>
+								<li>Fixed some weird css issues.</li>
+							</ul>
+							<h5>10/29</h5>
+							<ul>
+								<li>Added basic landing page and a few specific pages for games.</li>
+								<li>Started work on website.</li>
+							</ul>
 						</ul>
-						<h5>10/29</h5>
-						<ul>
-							<li>Added basic landing page and a few specific pages for games.</li>
-							<li>Started work on website.</li>
-						</ul>
-					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
-</body>
+	</body>
 
   <!-- JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $('#nav-container').load('navbar.html');
+    });
+  </script>
 </html>
 

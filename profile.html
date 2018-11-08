@@ -11,52 +11,36 @@
 
 <body>
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="/GameBase">
-				<img class="logo" src="res/logo.png">
-		</a>
-		<ul class="navbar-nav ml-auto">
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
-				<!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
-				<button class="btn btn-outline-light my-2 my-sm-0" type="submit"><a href="results.html">Search</a></button>
-			</form>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="games.html">Games</a>
-					<a class="dropdown-item" href="aspects.html">Aspects</a>
-					<a class="dropdown-item" href="categories.html">Categories</a>
-				</div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="preferences.html">Preferences</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="recommend.html">Recommend</a>
-			</li>
-			<li class="nav-item active">
-				<a class="nav-link" href="profile.html">Profile</a>
-			</li>
-		</ul>
-	</nav>
+	<div id="nav-container">
+	</div>
 	<!-- End of Navigation -->
+	
+	
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="text-center">
-					<h1>Username</h1>
+					<div id="username"></div>
 					<img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="rounded-circle" alt="avatar">
 				<br><br><br>
-				<h3>My Games</h3>
-				<h5><a href="games/overwatch.html">Overwatch</a> | Liked</h5>
-				<h5><a href="games/skyrim.html">The Elder Scrolls V: Skyrim</a> | Liked</h5>
-				<br><br><br>
+
+				
 				<h3>Wishlist</h3>
-				<h5>Fallout 3</h5>
+				<!-- Will be filled dynamically from local storage -->
+				<div id="wishlist_games"></div>
 				<br><br><br>
+				
+                <h3>Category Preferences</h3>
+				<div id="category_preferences">
+				<!-- Will be filled dynamically from local storage -->
+				</div>
+				<br><br><br>
+				
 				<h3>Aspect Preferences</h3>
-				<h5><a href="aspects/hard_but_fair.html">Hard but Fair</a> | Disliked</h5>
+				<div id="aspect_preferences">
+				<!-- Will be filled dynamically from local storage -->
+				</div>
+				
 				</div>
 			</div>
 		</div>
@@ -64,7 +48,16 @@
 </body>
 
   <!-- JS -->
+  <script type="text/javascript" id="games" src="data/games.json"></script>
+  <script type="text/javascript" id="categories" src="data/categories.json"></script>
+  <script type="text/javascript" id="aspects" src="data/aspects.json"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/profile.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('#nav-container').load('navbar.html');
+    });
+  </script>
 </html>

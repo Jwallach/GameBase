@@ -5,9 +5,14 @@ body, html {
 }
 search-container {
     max-width: 1000px;
-	width: 100%;
+	width: 100%;	
 }
 .logo {
 	max-height: 50px;
 	max-width: 50px;
+}
+.container-fluid {
+	height: 100%;
+	position: absolute;
+	background-color: rgba(128, 128, 128, 0.5);	
 }
