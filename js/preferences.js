@@ -7,8 +7,8 @@ $(document).ready(function() {
     
     for (var key in categoryMap) 
     {
-        var id = key.replace(/\s/g,'');
-        var context = {title: key, name:id, link: categoryMap[key], id_like: id + "_like", id_neutral : id + "_neutral", id_dislike: id + "_dislike"};
+        var id = key;
+        var context = {title: categoryMap[key]["title"], name:id, link: categoryMap[key]["link"], id_like: id + "_like", id_neutral : id + "_neutral", id_dislike: id + "_dislike"};
         var html    = template(context);
         document.getElementById("categories").innerHTML += html;
     }
@@ -23,14 +23,14 @@ $(document).ready(function() {
     for (var key in pref_category)
     {         
          var value = pref_category[key];
-         var id = key.replace(/\s/g,'');
+         var id = key;
          if (value === "Liked")
          {
-             document.getElementById(key + "_like").checked = true;
+             document.getElementById(id + "_like").checked = true;
          }
          else if (value === "Disliked")
          {
-            document.getElementById(key + "_dislike").checked = true;
+            document.getElementById(id + "_dislike").checked = true;
          }
     }
     
@@ -40,8 +40,8 @@ $(document).ready(function() {
     
     for (var key in aspectMap) 
     {
-        var id = key.replace(/\s/g,'');
-        var context = {title: key, name: id, link: aspectMap[key], id_like: id + "_like", id_neutral : id + "_neutral", id_dislike: id + "_dislike"};
+        var id = key;
+        var context = {title: aspectMap[key]["title"], name: id, link: aspectMap[key]["link"], id_like: id + "_like", id_neutral : id + "_neutral", id_dislike: id + "_dislike"};
         var html    = template(context);
 
         document.getElementById("aspects").innerHTML += html;
@@ -57,7 +57,7 @@ $(document).ready(function() {
     for (var key in pref_aspect)
     {         
          var value = pref_aspect[key];
-         var id = key.replace(/\s/g,'');
+         var id = key;
          if (value === "Liked")
          {
              document.getElementById(id + "_like").checked = true;
@@ -86,7 +86,7 @@ $('#save_preferences').click(function(){
     
     for (var key in categoryMap) 
     {
-         var value = $("input[name=" + key.replace(/\s/g,'') + "]:checked").val();
+         var value = $("input[name=" + key + "]:checked").val();
          if (value === "Liked")
          {
              pref_category[key] = "Liked";
@@ -113,7 +113,7 @@ $('#save_preferences').click(function(){
     
     for (var key in aspectMap) 
     {
-         var value = $("input[name=" + key.replace(/\s/g,'') + "]:checked").val();
+         var value = $("input[name=" + key + "]:checked").val();
          if (value === "Liked")
          {
              pref_aspect[key] = "Liked";

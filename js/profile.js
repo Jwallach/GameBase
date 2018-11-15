@@ -18,7 +18,7 @@ $( document ).ready(function() {
         
       for (var x = 0; x < wishlist.length; x ++)
       {
-        document.getElementById("wishlist_games").innerHTML += "<h5><a href=" + gameMap[wishlist[x]] + ">" + wishlist[x] + "</a></h5>\n"; 
+        document.getElementById("wishlist_games").innerHTML += "<h5><a href=" + gameMap[wishlist[x]]["link"] + ">" + wishlist[x] + "</a></h5>\n"; 
       }
     }
     
@@ -47,13 +47,13 @@ $( document ).ready(function() {
         {
           like = "Disliked";
         }
-        document.getElementById("aspect_preferences").innerHTML += "<h5><a href=" + aspectMap[key] + ">" + key + "</a> | " + like + "</h5>\n"; 
+        document.getElementById("aspect_preferences").innerHTML += "<h5><a href=" + aspectMap[key]["link"] + ">" + aspectMap[key]["title"] + "</a> | " + like + "</h5>\n"; 
       }
     }
     
     
     var categoryMap = categories;
-    console.log(categories);
+
     //if not defined,set the preferences to null
     if (localStorage.getItem("preference_category") === null)
     {
@@ -77,7 +77,7 @@ $( document ).ready(function() {
         {
           like = "Disliked";
         }
-        document.getElementById("category_preferences").innerHTML += "<h5><a href=" + categoryMap[key] + ">" + key + "</a> | " + like + "</h5>\n"; 
+        document.getElementById("category_preferences").innerHTML += "<h5><a href=" + categoryMap[key]["link"] + ">" + categoryMap[key]["title"] + "</a> | " + like + "</h5>\n"; 
       }
     }
     if (localStorage.getItem("username") === null)

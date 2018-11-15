@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8"> 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
     <link rel="stylesheet" type="text/css" href="css/categories.css">
@@ -14,25 +15,26 @@
 	<div id="nav-container">
 	</div>
 	<!-- End of Navigation -->
-    <div id=category_intro>
+    <div id=game_intro>
     <h3>Games</h3>
-    <p id=aspect_desc>List of Games</p>
+    <p id=game_desc>List of Games</p>
     </div>
-    <div id="category_list">
-        <div class="games">
-            <h5 class="game_name"><a href="games/skyrim.html">The Elder Scrolls V: Skyrim</a></h5>
-			<h5 class="game_name"><a href="games/overwatch.html">Overwatch</a></h5>
-        </div>
-    </div>
+    <ul id="game_list">
+    </ul>
 </body>
 
 <!-- JS -->
+<script type="text/javascript" id="games" src="data/games.json"></script>
+<script type="text/javascript" id="categories" src="data/categories.json"></script>
+<script type="text/javascript" id="aspects" src="data/aspects.json"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/browse_games.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
     $('#nav-container').load('navbar.html');
     });
   </script>
 </html>
+

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8"> 
     <base href="../"/>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
@@ -17,66 +18,36 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
-				<h1 id="game_title">Overwatch</h1>
-					<p>In a time of global crisis, an international task force of heroes banded together to restore peace to a war-torn world. This organization, known as Overwatch, ended the crisis and helped maintain peace for a generation, inspiring an era of exploration, innovation, and discovery. After many years, Overwatch's influence waned and it was eventually disbanded. Now in the wake of its dismantling, conflict is rising once again. Overwatch may be gone... but the world still needs heroes.</p>
+				<h1 id="game_title">overwatch</h1>
+                <div id ="description">
+                </div>
 				<br>
 				<h2>Categories</h2>
-				<ul>
-					<li>Multiplayer</li>
-					<li>FPS</li>
+				<ul id="categories">
 				</ul>
 				<h2>Aspects</h2>
-				<ul>
-					<li>Deterministic</li>
-					<li>Competitive</li>
+				<ul id="aspects">
 				</ul>
-				<h2>Other Games From the Developer</h2>
-				<ul>
-					<li>World of Warcraft</li>
-					<li>Diablo</li>
-					<li>Hearthstone</li>
-					<li>Starcraft</li>
-				</ul>
+
 				<h2>Similar Games</h2>
-				<ul>
-					<li>Team Fortress 2</li>
-					<li>Paladins</li>
+				<ul id="similar_games">
 				</ul>
+				
 				<button class="btn btn-secondary" id="wishlist_game" type="button">Add to Wishlist</button>
 			</div>
 			<div class="col-md-6">
-				<div class="row">
-				<div class="column">
-					<a target="_blank" href="res/game_img/ow_cover.png">
-						<img class="images" src="res/game_img/ow_cover.png" alt="Overwatch Cover">
-					</a>
-				</div>
-				<div class="column">
-					<a target="_blank" href="res/game_img/ow_logo.png">
-						<img class="images" src="res/game_img/ow_logo.png" alt="Overwatch Logo">
-					</a>
-				</div>
-				</div>
-				<div class="row">
-				<div class="column">
-					<a target="_blank" href="res/game_img/ow_screenshot1.png">
-						<img class="images" src="res/game_img/ow_screenshot1.png" alt="Screenshot">
-					</a>
-				</div>
-				<div class="column">
-					<a target="_blank" href="res/game_img/ow_screenshot2.png">
-						<img class="images" src="res/game_img/ow_screenshot2.png" alt="Hero List">
-					</a>
-				</div>
-				</div>
-			</div>
+				<div id="images" class="row">
+                </div>
 			
 			
-		</div>
+            </div>
 	</div>
 </body>
 
   <!-- JS -->
+  <script type="text/javascript" id="games" src="data/games.json"></script>
+  <script type="text/javascript" id="categories" src="data/categories.json"></script>
+  <script type="text/javascript" id="aspects" src="data/aspects.json"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>

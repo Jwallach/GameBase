@@ -1,8 +1,216 @@
-
-
-  games = 
-    {"Overwatch" : "games/overwatch.html",
-    "Skyrim" : "games/skyrim.html"}
-    ;
+games = 
+{
+  "overwatch": {
+	"title": "Overwatch",
+    "link": "games/overwatch.html",
+    "description": "In a time of global crisis, an international task force of heroes banded together to restore peace to a war-torn world. This organization, known as Overwatch, ended the crisis and helped maintain peace for a generation, inspiring an era of exploration, innovation, and discovery. After many years, Overwatch's influence waned and it was eventually disbanded. Now in the wake of its dismantling, conflict is rising once again. Overwatch may be gone... but the world still needs heroes.",
+    "categories": [
+      "multiplayer",
+      "fps"
+    ],
+    "aspects": [
+      "deterministic",
+      "competitive"
+    ],
+    "similar_games": [
+      "team_fortress_2",
+	  "paladins"
+    ],
+	"images": [
+	  "res/game_img/ow_cover.png",
+	  "res/game_img/ow_logo.png",
+	  "res/game_img/ow_screenshot1.png",
+	  "res/game_img/ow_screenshot2.png"
+	]
+  },
+  "skyrim": {
+	"title": "The Elder Scrolls V: Skyrim",
+    "link": "games/skyrim.html",
+    "description": "The Elder Scrolls V: Skyrim, the 2011 Game of the Year, is the next chapter in the highly anticipated Elder Scrolls saga. Developed by Bethesda Game Studios, the 2011 Studio of the Year, that brought you Oblivion and Fallout 3. Skyrim reimagines and revolutionizes the open-world fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose.",
+    "categories": [
+      "singleplayer",
+      "rpg"
+    ],
+    "aspects": [
+      "moddable",
+      "open_world",
+      "deterministic"
+    ],
+    "similar_games": [
+      "morrowind",
+	  "fallout",
+	  "witcher"
+    ],
+	"images": [
+	  "res/game_img/skyrim_cover.png",
+	  "res/game_img/skyrim_logo.png",
+	  "res/game_img/skyrim_screenshot1.png",
+	  "res/game_img/skyrim_screenshot2.png"
+	]
+  },
+    "rimworld": {
+	"title": "Rimworld",
+    "link": "games/rimworld.html",
+    "description": "RimWorld is a top-down construction and management simulation video game developed by Ludeon Studios. Games involve crash landing on a rim world and trying to survive with your pawns. Games often degererate in to cannibalism and drug manufacturing in order to survive. Dynamic storyteller options ensure the challenges are presented according to ones playstyle",
+    "categories": [
+      "singleplayer",
+      "sandbox"
+    ],
+    "aspects": [
+      "moddable",
+      "hard_but_fair_difficulty"
+    ],
+    "similar_games": [
+      "dwarf_fortress"
+    ],
+	"images": [
+	  "res/game_img/rim_cover.png",
+	  "res/game_img/rim_logo.png"
+	]
+  },
+  "hearthstone": {
+	"title": "Hearthstone",
+    "link": "games/hearthstone.html",
+    "description": "Sheathe your sword, draw your deck, and get ready for Hearthstone - the fast-paced strategy card game that's easy to learn and massively fun. Start a free game and play your cards to sling spells, summon creatures, and command the heroes of Warcraft in duels of epic strategy.",
+    "categories": [
+      "singleplayer",
+	  "multiplayer",
+	  "card_game"
+    ],
+    "aspects": [
+      "competitive",
+	  "rng"
+    ],
+    "similar_games": [
+      "gwent",
+	  "magic_the_gathering"
+    ],
+	"images": [
+	  "res/game_img/hearthstone_cover.png"
+	]
+  },
+  "pokemon": {
+	"title": "Pokemon Go",
+    "link": "games/pokemon.html",
+    "description": "An augmented reality mobile game developed and published by Niantic for iOS and Android devices. Catch Pokémon in the Real World!",
+    "categories": [
+      "multiplayer",
+	  "mobile"
+    ],
+    "aspects": [
+      "augmented_reality",
+	  "rng"
+    ],
+    "similar_games": [
+      "ingress"
+    ],
+	"images": [
+	  "res/game_img/pokemon_cover.png"
+	]
+  },
+  "destiny": {
+	"title": "Destiny 2",
+    "link": "games/destiny.html",
+    "description": "Humanity’s last safe city has fallen to an overwhelming invasion force, led by Ghaul, the imposing commander of the brutal Red Legion. He has stripped the city’s Guardians of their power, and forced the survivors to flee. You will venture to mysterious, unexplored worlds of our solar system to discover an arsenal of weapons and devastating new combat abilities. To defeat the Red Legion and confront Ghaul, you must reunite humanity’s scattered heroes, stand together, and fight back to reclaim our home.",
+    "categories": [
+      "multiplayer",
+	  "rpg"
+    ],
+    "aspects": [
+      "competitive",
+	  "open_world"
+    ],
+    "similar_games": [
+      "warframe",
+	  "anthem"
+    ],
+	"images": [
+	  "res/game_img/destiny_cover.png"
+	]
+  },
+  "rdr2": {
+	"title": "Red Dead Redemption 2",
+    "link": "games/rdr2.html",
+    "description": "A Western-themed action-adventure game set in an open world environment. It is played from either a third or first-person perspective and the player controls Arthur Morgan, an outlaw and a member of the Van der Linde gang.",
+    "categories": [
+      "singleplayer",
+	  "multiplayer",
+	  "fps"
+    ],
+    "aspects": [
+      "open_world",
+	  "story_driven"
+    ],
+    "similar_games": [
+      "gta",
+	  "witcher"
+    ],
+	"images": [
+	  "res/game_img/rdr2_cover.png"
+	]
+  },
+  "witcher": {
+	"title": "Witcher 3: Wild Hunt",
+    "link": "games/witcher.html",
+    "description": "In the open world of Wild Hunt, you chart your own path to adventure. You play as a bounty hunter, a man of the road. You set your own goals and choose your own destinations. Go after the bounty on the head of a nasty monster pestering a village or help a scheming prince who needs a dirty job done -- no matter what style of epic questing you crave, The Witcher will provide it.",
+    "categories": [
+      "singleplayer",
+      "rpg"
+    ],
+    "aspects": [
+      "moddable",
+      "open_world",
+      "deterministic"
+    ],
+    "similar_games": [
+      "skyrim",
+	  "fallout",
+	  "rdr2"
+    ],
+	"images": [
+	  "res/game_img/witcher_cover.png"
+	]
+  },
+  "mh": {
+	"title": "Monster Hunter: World",
+    "link": "games/mh.html",
+    "description": "Battle gigantic monsters in epic locales. As a hunter, you'll take on quests to hunt monsters in a variety of habitats. Take down these monsters and receive materials that you can use to create stronger weapons and armor in order to hunt even more dangerous monsters.",
+    "categories": [
+      "multiplayer",
+      "rpg"
+    ],
+    "aspects": [
+      "open_world",
+	  "hard_but_fair_difficulty",
+      "rng"
+    ],
+    "similar_games": [
+      "dark_souls"
+    ],
+	"images": [
+	  "res/game_img/mh_cover.png"
+	]
+  },
+  "xcom": {
+	"title": "XCOM 2",
+    "link": "games/xcom.html",
+    "description": "XCOM 2 casts the player as the commander of the eponymous military organization, now reduced to a resistance force opposing the ongoing alien occupation of the planet. Players take control of the Avenger, the new mobile base for XCOM. Players are tasked to give commands to squad members in battles against aliens during missions, while commanding the engineering and research department of the base between missions to create and research improved and new gadgets, weapons and technologies to assist players in battle.",
+    "categories": [
+      "singleplayer",
+      "rpg",
+	  "turn_based"
+    ],
+    "aspects": [
+	  "hard_but_fair_difficulty",
+      "rng"
+    ],
+    "similar_games": [
+      "xenonauts"
+    ],
+	"images": [
+	  "res/game_img/xcom_cover.png"
+	]
+  }
+};
 
 

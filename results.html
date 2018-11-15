@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8"> 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/results.css">
@@ -9,50 +10,58 @@
   </head>
 
 
-<body>
-	<!-- Navigation -->
-	<div id="nav-container">
-	</div>
-	</nav>
-	<!-- End of Navigation -->
-	<div class="container-fluid">
-		<h1>Results</h1><br>
-		<ul>
-			<div class="col-md-12">
-			<div class="row">
-				<li>
-					<h3>
-						<a href="games/overwatch.html">
-							<img class="logo" src="res/game_img/ow_cover.png"></img>
-							Overwatch
-						</a>
-					</h3>
-					<div class="desc">In a time of global crisis, an international task force of heroes banded together to restore peace to a war-torn world. This organization, known as Overwatch, ended the crisis and helped maintain peace for a generation, inspiring an era of exploration, innovation, and discovery. After many years, Overwatch's influence waned and it was eventually disbanded. Now in the wake of its dismantling, conflict is rising once again. Overwatch may be gone... but the world still needs heroes.</div><br>
-					<div class="tags">(Multiplayer) (FPS)</div>
-				</li><br>
+	<body>
+		<!-- Navigation -->
+		<div id="nav-container">
+		</div>
+		</nav>
+		<!-- End of Navigation -->
+		<div class="container-fluid">
+			<h1>Results</h1><br>
+			<div class="results">
+				<div class="part">
+					<div>
+						<h2>Games</h2>
+					</div>
+					<div class="list">
+						<ul>
+							<div class="results" id="game_result"></div>
+						</ul>
+					</div>
+				</div>
+				<div class="part">
+					<div>
+						<h2>Categories</h2>
+					</div>
+					<div class="list">
+						<ul>
+							<div class="results" id="cat_result"></div>
+						</ul>
+					</div>
+				</div>
+				<div class="part">
+					<div>
+						<h2>Aspects</h2>
+					</div>
+					<div class="list">
+						<ul>
+							<div class="results" id="asp_result"></div>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<div class="row">
-				<li>
-					<h3>
-						<a href="games/skyrim.html">
-							<img class="logo" src="res/game_img/skyrim_cover.png"></img>
-							The Elder Scrolls V: Skyrim
-						</a>
-					</h3>
-					<div class="desc">The Elder Scrolls V: Skyrim, the 2011 Game of the Year, is the next chapter in the highly anticipated Elder Scrolls saga. Developed by Bethesda Game Studios, the 2011 Studio of the Year, that brought you Oblivion and Fallout 3. Skyrim reimagines and revolutionizes the open-world fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose.</div><br>
-					<div class="tags">(Singleplayer) (RPG) [Moddable] [Open World] [Visually Appealing] [Story-driven] [other tag other tag other tag]</div>
-				</li>
-			</div>
-			</div>
-			</ul>
 		</div>
 	</div>
 </body>
 
   <!-- JS -->
+  <script type="text/javascript" id="games" src="data/games.json"></script>
+  <script type="text/javascript" id="categories" src="data/categories.json"></script>
+  <script type="text/javascript" id="aspects" src="data/aspects.json"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/results.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
     $('#nav-container').load('navbar.html');

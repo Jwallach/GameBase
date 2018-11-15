@@ -1,7 +1,8 @@
-.body, .html {
+body {
 	height: 100%;
 	margin: 0;
 	font: 400 15px/1.8 "Lato", sans-serif;
+	background-color: rgba(128, 128, 128, 0.5);	
 }
 .search-container {
     max-width: 1000px;
@@ -14,6 +15,45 @@
 .container-fluid {
 	text-align: center;
 	height: 100%;
-	position: absolute;
-	background-color: rgba(128, 128, 128, 0.5);	
+}
+.box {
+	margin: auto;
+	border: 2px solid;
+	position: center;
+	width: 60%;
+	text-align: center;
+}
+.title  {
+	border: 1px solid;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: rgba(132, 160, 219, 0.5);	
+}
+.description {
+	border: 1px solid;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: rgb(255, 255, 255);
+}
+.tags {
+	display: flex;
+	clear: both;
+	background-color: rgb(255, 255, 255);
+	
+}
+.categories {
+	border: 1px solid;
+	float: left;
+	width: 50%;
+}
+.aspects {
+	border: 1px solid;
+	float: right;
+	width: 50%;
+}
+.clear {
+	clear: both;
+}
+.col {
+	padding-top: 50px;
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8"> 
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/recommend.css">
@@ -17,35 +18,64 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col">
-				<h1>Similar to Games You Like</h1><br>
-				<p><a href="games/overwatch.html">Overwatch</a></p>
-				<p><a href="games/skyrim.html">The Elder Scrolls V: Skyrim</a></p>
-				<p>Hearthstone</p>
-				<p>Fallout 3</p>
-				<p>Pokemon</p>
-				<br>
-				<h1>Similar to Your Preferences</h1><br>
-				<p><a href="games/overwatch.html">Overwatch</a></p>
-				<p><a href="games/skyrim.html">The Elder Scrolls V: Skyrim</a></p>
-				<p>Hearthstone</p>
-				<p>Fallout 3</p>
-				<p>Pokemon</p>
-				<br>
-				<h1>Chosen Categories/Aspects</h1><br>
-				<p><a href="games/overwatch.html">Overwatch</a></p>
-				<p><a href="games/skyrim.html">The Elder Scrolls V: Skyrim</a></p>
-				<p>Hearthstone</p>
-				<p>Fallout 3</p>
-				<p>Pokemon</p>
+				<h1>Recommended Games Based on Your Categories</h1><br>
+				
+
+				<div id="recommend_category">
+								<!-- Filled in based on preferences -->
+				</div>
+				
+				<h1>Based on Your Aspects</h1><br>
+				<div id="recommend_aspect">
+					<!-- Filled in based on preferences -->
+				</div>
 			</div>
 		</div>
 	</div>
 </body>
+	
+  <script id="recommendation_template" type="text/x-handlebars-template">
+    <div class="box">
+      <div class="title">
+        <h1>{{title}}</h1>
+      </div>
+      <div class="description">
+        <p>{{description}}</p>
+      </div>
+      <div class="tags">
+        <div class="categories">
+          <ul>
+            {{#each categories}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+        </div>
+        <div class="aspects">
+          <ul>
+          {{#each aspects}}
+            <li>{{this}}</li>
+          {{/each}}
+          </ul>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <br>
+</script>
+
+
+
 
   <!-- JS -->
+  <script type="text/javascript" id="games" src="data/games.json"></script>
+  <script type="text/javascript" id="categories" src="data/categories.json"></script>
+  <script type="text/javascript" id="aspects" src="data/aspects.json"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.js"></script>
+  <script type="text/javascript" src="js/recommend.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
     $('#nav-container').load('navbar.html');

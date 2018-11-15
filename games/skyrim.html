@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8"> 
     <base href="../"/>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
@@ -14,77 +15,39 @@
 	<div id="nav-container">
 	</div>
 	<!-- End of Navigation -->
-
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
-				<h1 id="game_title">Skyrim</h1>
-					<p>The Elder Scrolls V: Skyrim, the 2011 Game of the Year, is the next chapter in the highly anticipated Elder Scrolls saga. Developed by Bethesda Game Studios, the 2011 Studio of the Year, that brought you Oblivion and Fallout 3. Skyrim reimagines and revolutionizes the open-world fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose.</p>
+				<h1 id="game_title">skyrim</h1>
+                <div id ="description">
+                </div>
 				<br>
 				<h2>Categories</h2>
-				<ul>
-					<li>Singleplayer</li>
-					<li>RPG</li>
+				<ul id="categories">
 				</ul>
 				<h2>Aspects</h2>
-				<ul>
-					<li>Moddable</li>
-					<li>Open World</li>
-					<li>Visually Appealing</li>
-					<li>Story-driven</li>
+				<ul id="aspects">
 				</ul>
-				<h2>Other Games From the Developer</h2>
-				<ul>
-					<li>Fallout 4</li>
-					<li>Fallout 3</li>
-					<li>Fallout: New Vegas</li>
-					<li>The Elder Scrolls IV: Oblivion</li>
-					<li>The Elder Scrolls III: Morrowind</li>
-					<li>Rage</li>
-					<li>Doom</li>
-				</ul>
+
 				<h2>Similar Games</h2>
-				<ul>
-					<li>The Witcher 3: Wild Hunt</li>
-					<li>Fallout 4</li>
-					<li>Fallout 3</li>
-					<li>Fallout: New Vegas</li>
-					<li>The Elder Scrolls IV: Oblivion</li>
-					<li>The Elder Scrolls III: Morrowind</li>
+				<ul id="similar_games">
 				</ul>
-                <button class="btn btn-secondary" id="wishlist_game" type="button">Add to Wishlist</button>
+				
+				<button class="btn btn-secondary" id="wishlist_game" type="button">Add to Wishlist</button>
 			</div>
 			<div class="col-md-6">
-				<div class="row">
-				<div class="column">
-					<a target="_blank" href="res/game_img/skyrim_cover.png">
-						<img class="images" src="res/game_img/skyrim_cover.png" alt="Skyrim Cover">
-					</a>
-				</div>
-				<div class="column">
-					<a target="_blank" href="res/game_img/skyrim_logo.png">
-						<img class="images" src="res/game_img/skyrim_logo.png" alt="Skyrim Logo">
-					</a>
-				</div>
-				</div>
-				<div class="row">
-				<div class="column">
-					<a target="_blank" href="res/game_img/skyrim_screenshot1.png">
-						<img class="images" src="res/game_img/skyrim_screenshot1.png" alt="Screenshot">
-					</a>
-				</div>
-				<div class="column">
-					<a target="_blank" href="res/game_img/skyrim_screenshot2.png">
-						<img class="images" src="res/game_img/skyrim_screenshot2.png" alt="Screenshot">
-					</a>
-				</div>
-				</div>
-			</div>
-		</div>
+				<div id="images" class="row">
+                </div>
+			
+			
+            </div>
 	</div>
 </body>
 
   <!-- JS -->
+  <script type="text/javascript" id="games" src="data/games.json"></script>
+  <script type="text/javascript" id="categories" src="data/categories.json"></script>
+  <script type="text/javascript" id="aspects" src="data/aspects.json"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>

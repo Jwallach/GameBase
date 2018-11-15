@@ -1,3 +1,31 @@
     categories = 
-    {"Singleplayer": "categories/singleplayer.html"}
-    ;
+    {
+        
+    "singleplayer": {
+    "title":"Single Player Gameplay",
+    "link": "categories/singleplayer.html",
+    "description": "Games which are designed to be played by a single person, typically featuring PVE gameplay. The enemies in said game are typically controlled by AI or arise directly from the player's own actions",
+
+    "game_examples": [
+      "rimworld",
+      "dark_souls",
+      "skyrim",
+	  "hearthstone",
+	  "rdr2",
+	  "witcher",
+	  "xcom"
+    ]
+  },
+  "sandbox": {
+    "title":"Sandbox",
+    "link": "categories/sandbox.html",
+    "description": "Games that typically encourage creative solutions and do not have a set win condition or end goal. Generally encourage players to explore and play with the mechanics rather than beating the game",
+
+    "game_examples": [
+      "rimworld",
+      "cataclysm_dda",
+      "skyrim"
+    ]
+  }
+    
+};

@@ -1,8 +1,8 @@
-.body, .html {
+body {
 	height: 100%;
-	width: 100%;
 	margin: 0;
 	font: 400 15px/1.8 "Lato", sans-serif;
+	background-color: rgba(128, 128, 128, 0.5);	
 }
 .search-container {
     max-width: 1000px;
@@ -14,7 +14,6 @@
 }
 .column {
     margin: 5px;
-	border: 1px solid #ccc;
     float: left;
 }
 .images {
@@ -22,9 +21,5 @@
 	max-width: 100%;
 	width: auto;
 	height: auto;
-}
-.container-fluid {
-	height: 100%;
-	position: absolute;
-	background-color: rgba(128, 128, 128, 0.5);	
+	border: 1px solid #ccc;
 }
