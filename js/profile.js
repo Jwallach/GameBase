@@ -18,7 +18,7 @@ $( document ).ready(function() {
         
       for (var x = 0; x < wishlist.length; x ++)
       {
-        document.getElementById("wishlist_games").innerHTML += "<h5><a href=" + gameMap[wishlist[x]]["link"] + ">" + wishlist[x] + "</a></h5>\n"; 
+        document.getElementById("wishlist_games").innerHTML += "<h5><a href=" + gameMap[wishlist[x]]["link"] + ">" + gameMap[wishlist[x]]["title"] + "</a></h5>\n"; 
       }
     }
     

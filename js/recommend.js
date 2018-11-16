@@ -74,8 +74,39 @@ $( document ).ready(function() {
     {
       for (var x = 0; x < recommend_aspect.length; x ++)
       {
+
+          
           var game = gameMap[recommend_aspect[x]];
-          var context = {title: game["title"], description: game["description"], aspects: game["aspects"], categories: game["categories"]};
+          var gameLink = "<a href=" + game["link"] + ">" + game["title"] + "</a>";
+
+          var aspectLinks = []
+          for (var y = 0; y < game["aspects"].length; y ++)
+          {
+            if (game["aspects"][y] in aspectMap)
+            {
+              aspectLinks.push("<a href=" + aspectMap[game["aspects"][y]]["link"] + ">" + aspectMap[game["aspects"][y]]["title"] + "</a>");
+            }
+            else
+            {
+              aspectLinks.push( game["aspects"][y]);
+            }
+          }
+
+          var categoryLinks = []
+          for (var y = 0; y < game["categories"].length; y ++)
+          {
+            if (game["categories"][y] in categoryMap)
+            {
+              categoryLinks.push("<a href=" + categoryMap[game["categories"][y]]["link"] + ">" + categoryMap[game["categories"][y]]["title"] + "</a>");
+            }
+            else
+            {
+              categoryLinks.push( game["categories"][y]);
+            }
+          }
+
+
+          var context = {title: gameLink, description: game["description"], aspects: aspectLinks, categories: categoryLinks};
           var html    = template(context);
           document.getElementById("recommend_aspect").innerHTML += html;
       }
@@ -93,7 +124,38 @@ $( document ).ready(function() {
       for (var x = 0; x < recommend_category.length; x ++)
       {
           var game = gameMap[recommend_category[x]];
-          var context = {title: game["title"], description: game["description"], aspects: game["aspects"], categories: game["categories"]};
+          var gameLink = "<a href=" + game["link"] + ">" + game["title"] + "</a>";
+
+
+
+          var aspectLinks = []
+          for (var y = 0; y < game["aspects"].length; y ++)
+          {
+            if (game["aspects"][y] in aspectMap)
+            {
+              aspectLinks.push("<a href=" + aspectMap[game["aspects"][y]]["link"] + ">" + aspectMap[game["aspects"][y]]["title"] + "</a>");
+            }
+            else
+            {
+              aspectLinks.push( game["aspects"][y]);
+            }
+          }
+
+          var categoryLinks = []
+          for (var y = 0; y < game["categories"].length; y ++)
+          {
+            if (game["categories"][y] in categoryMap)
+            {
+              categoryLinks.push("<a href=" + categoryMap[game["categories"][y]]["link"] + ">" + categoryMap[game["categories"][y]]["title"] + "</a>");
+            }
+            else
+            {
+              categoryLinks.push( game["categories"][y]);
+            }
+          }
+
+
+          var context = {title: gameLink, description: game["description"], aspects: aspectLinks, categories: categoryLinks};
           var html    = template(context);
           document.getElementById("recommend_category").innerHTML += html;
       }

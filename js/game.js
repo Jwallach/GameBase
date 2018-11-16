@@ -4,7 +4,7 @@ $( document ).ready(function() {
     var aspectMap = aspects;
     
     //Populate fields with json information
-    var game = gameMap[document.getElementById("game_title").innerHTML];
+    var game = gameMap[document.getElementById("game_key").innerHTML];
     
     document.getElementById("game_title").innerHTML = game["title"];
     document.getElementById("description").innerHTML += game["description"];
@@ -64,7 +64,7 @@ $( document ).ready(function() {
     {
         localStorage.setItem("wishlist",JSON.stringify([]));
     }
-    var title = document.getElementById("game_title").innerHTML;
+    var title = document.getElementById("game_key").innerHTML;
     //get wishlist
     var wishlist = JSON.parse(localStorage.getItem("wishlist"));
     
@@ -94,7 +94,7 @@ $('#wishlist_game').click(function(){
         localStorage.setItem("wishlist",JSON.stringify([]));
     }
     
-    var title = document.getElementById("game_title").innerHTML;
+    var title = document.getElementById("game_key").innerHTML;
     
     //get wishlist
     var wishlist = JSON.parse(localStorage.getItem("wishlist"));
