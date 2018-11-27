@@ -11,7 +11,10 @@
       "dark_souls",
       "darkest_dungeon",
 	  "mh",
-	  "xcom"
+	  "xcom",
+	  "cataclysm_dda",
+	  "dwarf_fortress",
+	  "nethack"
     ]
   },
 
@@ -20,9 +23,13 @@
     "link":"aspects/deterministic.html",
     "description":"Games that have no reliance on random chance. For a given set of actions, the same result will always manifest. An example of this type of game is chess. If the players make the samemoves, then this will always lead  to the same board state.",
     "game_examples" : [
-    "chess",
     "overwatch",
-    "league_of_legends"
+	"skyrim",
+	"witcher",
+	"fallout",
+	"morrowind",
+    "league_of_legends",
+	"dota2"
     ]
     },
     "moddable":{
@@ -32,9 +39,93 @@
 
     "game_examples" : [
     "rimworld",
-    "factorio",
+	"skyrim",
     "minecraft",
-	"witcher"
+	"terraria",
+	"witcher",
+	"gta",
+	"cataclysm_dda",
+	"dwarf_fortress",
+	"nethack"
     ]
-    }
+    },
+    "competitive":{
+    "title":"Competitive Gameplay",
+    "link":"aspects/competitive.html",
+    "description":"Games that are multiplayer and player vs player. Developers of these games try to balance the game such that no options is always better than the others, leading to multiple choices that all have unique strengths and weaknesses. Generally these games are constantly updated to tweak the balance as players find new strategies and new features are added.",
+
+    "game_examples" : [
+    "overwatch",
+	"team_fortress_2",
+    "dota2",
+    "league_of_legends",
+	"hearthstone",
+	"gwent",
+	"magic",
+	"destiny"
+    ]
+    },
+    "open_world":{
+    "title":"Open World",
+    "link":"aspects/open_world.html",
+    "description":"Games that feature a world where one is free to wander from an early stage and does not have its zones ordered in a hard sequential manner. For example, an RPG could be considered open world if one could go to the majority of the locations in the game from the very start after any turorial areas. Generally these games tend to be sandbox games.",
+
+    "game_examples" : [
+    "skyrim",
+    "witcher",
+    "minecraft",
+	"terraria",
+	"rdr2",
+	"destiny",
+	"warframe",
+	"cataclysm_dda",
+	"fallout",
+	"morrowind",
+	"gta",
+	"dark_souls"
+    ]
+    },
+    "rng":{
+    "title":"RNG Influenced Games",
+    "link":"aspects/rng.html",
+    "description":"Games that have a random component as a core part of game design. For example, traditional roguelikes such as nethack or angband feature random level generation, making it so that no 2 trecks through the dungeon are ever the same. Well made RNG games tend to not feel unfair but still provide unpredictability and test the player's skill to adapt to changing situations",
+
+    "game_examples" : [
+    "cataclysm_dda",
+    "xcom",
+    "darkest_dungeon",
+	"nethack",
+	"hearthstone",
+	"gwent",
+	"magic",
+	"warframe",
+	"dark_souls",
+	"pokemon"
+    ]
+  },
+    "story_driven": {
+    "title":"Story Driven Gameplay",
+    "link": "aspects/story_driven.html",
+    "description": "Games that feature story as a principal component of the design of the game. Great care is taken to make the world feel alive and fleshed out, in contrast where story is merely an afterthough for the gameplay.",
+
+    "game_examples": [
+      "skyrim",
+      "witcher",
+	  "rdr2",
+	  "xcom",
+	  "fallout",
+	  "morrowind",
+	  "gta"
+    ]
+  },
+    "ar": {
+    "title":"Augmented Reality",
+    "link": "aspects/ar.html",
+    "description": "Games that feature augmented reality, or superimposing game objects on a picture of the real world. For example, an RPG might have the monster the player is fighting appear in front of whatever a smartphone camera has displayed",
+
+    "game_examples": [
+      "pokemon",
+      "ingress"
+    ]
+  }
 };

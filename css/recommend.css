@@ -10,7 +10,7 @@ body {
 }
 .logo {
 	max-height: 50px;
-	max-width: 50px;
+	max-width: 300px;
 }
 .container-fluid {
 	text-align: center;
@@ -56,4 +56,10 @@ body {
 }
 .col {
 	padding-top: 50px;
+}
+.wishlist-btn {
+	text-align: center;
+	width: 100%;
+	font-weight: bold;
+	background-color: rgba(132, 160, 219, 0.5);
 }

@@ -120,7 +120,7 @@ $('#wishlist_game').click(function(){
         localStorage.setItem("wishlist",JSON.stringify(wishlist));
     }
     
-    
+    document.getElementById("saved").innerHTML = "Wishlist Updated. <h5><a href=\"profile.html\"</a>Click here to see your wishlist!</h5>\n";
     
     
     

@@ -13,7 +13,10 @@
 	  "hearthstone",
 	  "rdr2",
 	  "witcher",
-	  "xcom"
+	  "xcom",
+	  "fallout",
+	  "gwent",
+	  "magic"
     ]
   },
   "sandbox": {
@@ -24,7 +27,100 @@
     "game_examples": [
       "rimworld",
       "cataclysm_dda",
-      "skyrim"
+      "skyrim",
+	  "minecraft",
+	  "terraria"
+    ]
+  },
+  "multiplayer": {
+    "title":"Multiplayer Gameplay",
+    "link": "categories/multiplayer.html",
+    "description": "Games that are designed to be played or can be played with multiple players, either against each other or together against a computer.",
+
+    "game_examples": [
+      "overwatch",
+      "hearthstone",
+	  "pokemon",
+	  "destiny",
+	  "rdr2",
+      "mh",
+	  "team_fortress_2",
+	  "ingress",
+	  "minecraft",
+	  "terraria",
+	  "gwent",
+	  "magic",
+	  "dota2",
+	  "league_of_legends",
+	  "warframe",
+	  "gta",
+	  "dark_souls"
+    ]
+    },
+  "fps": {
+    "title":"First Person Shooter",
+    "link": "categories/fps.html",
+    "description": "Games that are played in first person perspective and whose core gameplay loop generally involves shooting enemies. FPS can vary between realistic military simulations to fantastical colorful super soldiers firing rainbow blaster cannons, and from multiplayer competitive experiences to PVE gameplay",
+
+    "game_examples": [
+      "overwatch",
+      "team_fortress_2"
+    ]
+    },
+  "rpg": {
+    "title":"Role Playing Game",
+    "link": "categories/rpg.html",
+    "description": "Games in which each participant assumes the role of a character, generally in a fantasy or science fiction setting, that can interact within the game's imaginary world. Generally involve character statistics and skills such as strength, character level, and lockpicking skill as a core component of gameplay",
+
+    "game_examples": [
+      "skyrim",
+      "darkest_dungeon",
+      "dark_souls"
+    ]
+  },
+    "turn_based": {
+    "title":"Turn Based Gameplay",
+    "link": "categories/turn_based.html",
+    "description": "Games in which each participant takes turns in gameplay. For example, in chess black and white both take turns one after another moving a piece until the game concludes. These games generally let you take your time and think about the consequences of said decision for as long as one needs.",
+
+    "game_examples": [
+      "darkest_dungeon",
+      "hearthstone",
+      "xcom",
+	  "gwent",
+	  "magic"
+    ]
+  },
+    "card_game": {
+    "title":"Card Game",
+    "link": "categories/card_game.html",
+    "description": "Games which are played using cards, ranging from traditional 52 card set such as poker to less traditional cards featuring monsters and spells. These game are usually turn based an often multiplayer, having 2 players pit their decks against each other",
+
+    "game_examples": [
+      "hearthstone",
+	  "gwent",
+	  "magic"
+    ]
+  },
+    "mobile": {
+    "title":"Mobile Game",
+    "link": "categories/mobile.html",
+    "description": "Games which are designed to be played on a mobile playform, generally smartphone. Many games traditionally played on PC or console can be played on a mobile console, while otheres are hard to translate. Generally feature shorter game sessions and the ability to play for small sessions.",
+
+    "game_examples": [
+      "hearthstone",
+      "pokemon",
+	  "ingress"
+    ]
+  },
+    "moba": {
+    "title":"Multiplayer Online Battle Arena (MOBA)",
+    "link": "categories/moba.html",
+    "description": "Mobas are played in matches between two teams of five players, with each team occupying and defending their own separate base on the map. Each of the ten players independently controls a powerful character, known as a hero, who all have unique abilities and differing styles of play. During a match, players collect experience points and items for their heroes to successfully defeat the opposing team's heroes in player versus player combat. A team wins by being the first to destroy a large structure located in the opposing team's base. Players often kill creeps either neutral ones between the lanes or ones in the lanes that march towards the enemy base to acquire experience and items to defeat the enemy team and win the game.",
+
+    "game_examples": [
+      "league_of_legends",
+      "dota2"
     ]
   }
     

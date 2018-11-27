@@ -74,7 +74,8 @@ $( document ).ready(function() {
 			}
 			var gcResults = [];
 			var gaResults = [];
-			document.getElementById("game_result").innerHTML += "</div></li><br><br></div>\n";
+			document.getElementById("game_result").innerHTML += "<div><button class='btn btn-secondary' id='wishlist_game_"+g+"' type='button' onclick='modify_wishlist(\""+g+"\")'>Add to Wishlist</button></div>"
+			document.getElementById("game_result").innerHTML += "</div></li><br></div>\n";
         }
 	}
 	
@@ -116,5 +117,4 @@ $( document ).ready(function() {
 	{
 		document.getElementById("asp_result").innerHTML += "<h3>No aspects found</h3>\n";
 	}
-
 });

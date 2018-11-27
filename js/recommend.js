@@ -36,9 +36,32 @@ $( document ).ready(function() {
                 //If game has the aspect and is not already recommended
                 if (games[keyG]["aspects"].includes(key) && !recommendations.includes(keyG))
                 {
-                    //Add it to the recommendations
-                    recommendations.push(keyG);
-                    recommend_aspect.push(keyG);
+                    var disliked = false;
+                    for (var x = 0; x < games[keyG]["aspects"].length; x++)
+                    {
+                        if (games[keyG]["aspects"][x] in pref_aspect && pref_aspect[games[keyG]["aspects"][x]] === "Disliked")
+                        {
+                            disliked = true;
+                            break;
+                        }
+                        
+                    }
+                    for (var x = 0; x < games[keyG]["categories"].length; x++)
+                    {
+                        if (games[keyG]["categories"][x] in pref_category && pref_category[games[keyG]["categories"][x]] === "Disliked")
+                        {
+                            disliked = true;
+                            break;
+                        }
+                    }
+                    
+                    if (!disliked)
+                    {
+                      //Add it to the recommendations
+                      recommendations.push(keyG);
+                      recommend_aspect.push(keyG);
+                    }
+                        
                 }
             }
         }
@@ -55,9 +78,31 @@ $( document ).ready(function() {
                 //If game has the aspect and is not already recommended
                 if (games[keyG]["categories"].includes(key) && !recommendations.includes(keyG))
                 {
-                    //Add it to the recommendations
-                    recommendations.push(keyG);
-                    recommend_category.push(keyG);
+                    var disliked = false;
+                    for (var x = 0; x < games[keyG]["aspects"].length; x ++)
+                    {
+                        if (games[keyG]["aspects"][x] in pref_aspect && pref_aspect[games[keyG]["aspects"][x]] === "Disliked")
+                        {
+                            disliked = true;
+                        }
+                        
+                    }
+                    for (var x = 0; x < games[keyG]["categories"].length; x ++)
+                    {
+                        if (games[keyG]["categories"][x] in pref_category && pref_category[games[keyG]["categories"][x]] === "Disliked")
+                        {
+                            disliked = true;
+                        }
+                        
+                    }
+                    
+                    if (!disliked)
+                    {
+                      //Add it to the recommendations
+                      recommendations.push(keyG);
+                      recommend_category.push(keyG);
+                    }
+
                 }
             }
         }
@@ -106,7 +151,7 @@ $( document ).ready(function() {
           }
 
 
-          var context = {title: gameLink, description: game["description"], aspects: aspectLinks, categories: categoryLinks};
+          var context = {title: gameLink, description: game["description"], aspects: aspectLinks, categories: categoryLinks, game_key: recommend_aspect[x]};
           var html    = template(context);
           document.getElementById("recommend_aspect").innerHTML += html;
       }
@@ -155,7 +200,7 @@ $( document ).ready(function() {
           }
 
 
-          var context = {title: gameLink, description: game["description"], aspects: aspectLinks, categories: categoryLinks};
+          var context = {title: gameLink, description: game["description"], aspects: aspectLinks, categories: categoryLinks, game_key: recommend_category[x]};
           var html    = template(context);
           document.getElementById("recommend_category").innerHTML += html;
       }

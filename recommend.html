@@ -59,6 +59,9 @@
         </div>
         <div class="clear"></div>
         </div>
+		<div>
+			<button class="btn wishlist-btn" id="wishlist_game_{{{game_key}}}" type="button" onclick='modify_wishlist("{{{game_key}}}")'>Add to Wishlist</button>
+		</div>
         <div class="clear"></div>
         </div>
         <br>
@@ -75,6 +78,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.js"></script>
+  <script type="text/javascript" src="js/lib.js"></script>
   <script type="text/javascript" src="js/recommend.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {

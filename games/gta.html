@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"> 
+    <base href="../"/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/games.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Grand Theft Auto V</title>
+  </head>
+
+<body>
+	<!-- Navigation -->
+	<div id="nav-container">
+	</div>
+	<!-- End of Navigation -->
+	<div id="game_key" style="display: none;">gta</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6">
+				<h1 id="game_title"></h1>
+                <div id ="description">
+                </div>
+				<br>
+				<h2>Categories</h2>
+				<ul id="categories">
+				</ul>
+				<h2>Aspects</h2>
+				<ul id="aspects">
+				</ul>
+
+				<h2>Similar Games</h2>
+				<ul id="similar_games">
+				</ul>
+				
+				<button class="btn btn-secondary" id="wishlist_game" type="button">Add to Wishlist</button>
+				<div id="saved"></div>
+			</div>
+			<div class="col-md-6">
+				<div id="images" class="row">
+                </div>
+			
+			
+            </div>
+	</div>
+</body>
+
+  <!-- JS -->
+  <script type="text/javascript" id="games" src="data/games.json"></script>
+  <script type="text/javascript" id="categories" src="data/categories.json"></script>
+  <script type="text/javascript" id="aspects" src="data/aspects.json"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('#nav-container').load('navbar.html');
+    });
+  </script>
+</html>
