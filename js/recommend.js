@@ -113,7 +113,7 @@ $( document ).ready(function() {
     
     if (recommend_aspect.length == 0)
     {
-      document.getElementById("recommend_aspect").innerHTML += "<p>Could not recommend any games based on your aspects, try and like/dislike more aspects</p>";
+      document.getElementById("recommend_aspect").innerHTML += "<p>Could not recommend any games based on your aspects, <a href='preferences.html'>try and like/dislike more aspects</a></p>";
     }
     else
     {
@@ -162,7 +162,7 @@ $( document ).ready(function() {
     
     if (recommend_category.length == 0)
     {
-      document.getElementById("recommend_category").innerHTML += "<p>Could not recommend any games based on your categories, try and like/dislike more categories</p>";
+      document.getElementById("recommend_category").innerHTML += "<p>Could not recommend any games based on your categories, <a href='preferences.html'>try and like/dislike more aspects</a></p>";
     }
     else
     {

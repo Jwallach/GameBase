@@ -76,7 +76,8 @@ games =
       "singleplayer",
 	  "multiplayer",
 	  "card_game",
-	  "mobile"
+	  "mobile",
+	  "turn_based"
     ],
     "aspects": [
       "competitive",
@@ -315,7 +316,7 @@ games =
 	  "witcher"
     ],
 	"images": [
-	  "res/game_img/fallout_cover.png"
+	  "res/game_img/fallout3_cover.png"
 	]
   },
   "morrowind": {
@@ -404,7 +405,8 @@ games =
     "categories": [
       "singleplayer",
 	  "multiplayer",
-	  "card_game"
+	  "card_game",
+	  "turn_based"
     ],
     "aspects": [
       "competitive",
@@ -425,7 +427,8 @@ games =
     "categories": [
       "singleplayer",
 	  "multiplayer",
-	  "card_game"
+	  "card_game",
+	  "turn_based"
     ],
     "aspects": [
       "competitive",

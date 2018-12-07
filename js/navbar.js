@@ -13,5 +13,6 @@ $( document ).ready(function() {
 
 function logout()
 {
-  localStorage.removeItem("username");
+	localStorage.clear();
+	//localStorage.removeItem("username");
 }
